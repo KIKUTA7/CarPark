@@ -1,8 +1,8 @@
 package fop.w5cars;
 
 public class LicensePlate {
-	public String regionalCode , letters;
-	int digits;
+	private String regionalCode , letters;
+	private int digits;
 	public LicensePlate (String x , String y , int k)
     {
         this.regionalCode = x;
