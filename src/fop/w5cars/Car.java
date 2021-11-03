@@ -8,6 +8,7 @@ public class Car {
     {
         this.brand = x;
         this.licensePlate = y;
-        this.chassisNumber ++;
+        chassisNumber++;
     }
+
 }
