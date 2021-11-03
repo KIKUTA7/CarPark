@@ -3,7 +3,7 @@ package fop.w5cars;
 public class Car {
 	private String brand;
 	private LicensePlate licensePlate;
-	private int chassisNumber = 0;
+	private int chassisNumber;
 	private static int count =0;
 	public Car (String x , LicensePlate y)
     {
@@ -38,5 +38,6 @@ public class Car {
     }
     public String toString() {
 	  return "Car "+chassisNumber+": (Brand: "+this.brand+", License Plate: "+this.licensePlate+")";
+
     }
 }

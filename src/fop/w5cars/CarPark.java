@@ -20,13 +20,17 @@ public class CarPark {
     public int search (LicensePlate lp)
     {
         for (int i=0;i<spaces.length;i++)
-            if(spaces[i].getLicensePlate() == lp) return i;
+        {if(spaces[i]!=null){
+            if(spaces[i].getLicensePlate() == lp) return i;}}
             return -1;
     }
     public Car driveOff (LicensePlate lp)
     {
         int pos = search(lp);
-        if(pos == -1) return null;
+        if(pos == -1)
+        {
+
+        }
         return spaces[pos];
     }
     public String toString() {
@@ -35,7 +39,7 @@ public class CarPark {
         {
             if(spaces[i] == null) s+=i+"[: ]\n";
             else
-            s+= i+": ["+driveOff(spaces[i].getLicensePlate())+"]\n";
+            s+= i+"[: ["+driveOff(spaces[i].getLicensePlate())+"]\n";
         }
       return s;
     }

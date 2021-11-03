@@ -22,6 +22,18 @@ public class LicensePlate {
         return digits;
     }
 
+    public void setDigits(int digits) {
+        this.digits = digits;
+    }
+
+    public void setLetters(String letters) {
+        this.letters = letters;
+    }
+
+    public void setRegionalCode(String regionalCode) {
+        this.regionalCode = regionalCode;
+    }
+
     public boolean isEqual (LicensePlate other)
     {
         return (this.regionalCode.equals(other.regionalCode)  && this.letters.equals(other.letters)  && this.digits == other.digits);
