@@ -21,16 +21,13 @@ public class CarPark {
     {
         for (int i=0;i<spaces.length;i++)
         {if(spaces[i]!=null){
-            if(spaces[i].getLicensePlate() == lp) return i;}}
+            if(spaces[i].getLicensePlate().isEqual(lp)) return i;}}
             return -1;
     }
     public Car driveOff (LicensePlate lp)
     {
         int pos = search(lp);
-        if(pos == -1)
-        {
-
-        }
+        if(pos == -1) return null;
         return spaces[pos];
     }
     public String toString() {
