@@ -9,9 +9,9 @@ public class LicensePlate {
         this.letters = y;
         this.digits = k;
     }
-    public boolean isEqual (LicensePlate x)
+    public boolean isEqual (LicensePlate other)
     {
-        return (this.regionalCode.equals(x.regionalCode)  && this.letters.equals(x.letters)  && this.digits == x.digits);
+        return (this.regionalCode.equals(other.regionalCode)  && this.letters.equals(other.letters)  && this.digits == other.digits);
     }
 
 
