@@ -18,6 +18,10 @@ public class LicensePlate {
         return letters;
     }
 
+    public int getDigits() {
+        return digits;
+    }
+
     public boolean isEqual (LicensePlate other)
     {
         return (this.regionalCode.equals(other.regionalCode)  && this.letters.equals(other.letters)  && this.digits == other.digits);
