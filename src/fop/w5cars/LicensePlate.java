@@ -9,6 +9,11 @@ public class LicensePlate {
         this.letters = y;
         this.digits = k;
     }
+
+    public String getRegionalCode() {
+        return regionalCode;
+    }
+
     public boolean isEqual (LicensePlate other)
     {
         return (this.regionalCode.equals(other.regionalCode)  && this.letters.equals(other.letters)  && this.digits == other.digits);

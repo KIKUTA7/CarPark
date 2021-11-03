@@ -12,6 +12,11 @@ public class CarPark {
           if(spaces [i] == null) {spaces[i] = c;return i;}
       return -1;
     }
+
+    public Car[] getSpaces() {
+        return spaces;
+    }
+
     public int search (LicensePlate lp)
     {
         for (int i=0;i< spaces.length;i++)

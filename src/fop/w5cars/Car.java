@@ -8,7 +8,11 @@ public class Car {
     {
         this.brand = x;
         this.licensePlate = y;
-        chassisNumber++;
+        this.chassisNumber++;
+    }
+
+    public String getBrand() {
+        return brand;
     }
 
     public LicensePlate getLicensePlate() {
