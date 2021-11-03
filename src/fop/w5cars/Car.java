@@ -3,7 +3,7 @@ package fop.w5cars;
 public class Car {
 	private String brand;
 	private LicensePlate licensePlate;
-	public static int chassisNumber = 0;
+	protected static int chassisNumber = 0;
 	public Car (String x , LicensePlate y)
     {
         this.brand = x;
