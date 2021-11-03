@@ -39,9 +39,9 @@ public class CarPark {
 	    String  s  ="Car Park:\n";
 	    for (int i=0;i<spaces.length;i++)
         {
-            if(spaces[i] == null) s+=i+"[: ]\n";
+            if(spaces[i] == null) s+=i+": []\n";
             else
-            s+= i+"[: "+driveOff(spaces[i].getLicensePlate())+"]\n";
+            s+= i+": ["+spaces[i]+"]\n";
         }
       return s;
     }
