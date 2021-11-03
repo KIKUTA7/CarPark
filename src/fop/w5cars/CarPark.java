@@ -28,7 +28,12 @@ public class CarPark {
     {
         int pos = search(lp);
         if(pos == -1) return null;
-        return spaces[pos];
+        else {
+            Car car = spaces[pos];
+            spaces[pos] = null;
+            return car;
+        }
+
     }
     public String toString() {
 	    String  s  ="Car Park:\n";
