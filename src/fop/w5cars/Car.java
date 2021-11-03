@@ -15,6 +15,18 @@ public class Car {
         return brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setChassisNumber(int chassisNumber) {
+        this.chassisNumber = chassisNumber;
+    }
+
+    public int getChassisNumber() {
+        return chassisNumber;
+    }
+
     public LicensePlate getLicensePlate() {
         return licensePlate;
     }

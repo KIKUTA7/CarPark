@@ -14,6 +14,10 @@ public class LicensePlate {
         return regionalCode;
     }
 
+    public String getLetters() {
+        return letters;
+    }
+
     public boolean isEqual (LicensePlate other)
     {
         return (this.regionalCode.equals(other.regionalCode)  && this.letters.equals(other.letters)  && this.digits == other.digits);
