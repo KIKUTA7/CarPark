@@ -19,7 +19,7 @@ public class CarPark {
 
     public int search (LicensePlate lp)
     {
-        for (int i=0;i< spaces.length;i++)
+        for (int i=0;i<spaces.length;i++)
             if(spaces[i].getLicensePlate() == lp) return i;
             return -1;
     }
@@ -33,7 +33,7 @@ public class CarPark {
 	    String  s  ="Car Park:\n";
 	    for (int i=0;i<spaces.length;i++)
         {
-            if(search(spaces[i].getLicensePlate()) == -1) s+=i+"[]\n";
+            if(spaces[i] == null) s+=i+"[]\n";
             else
             s+= i+": ["+driveOff(spaces[i].getLicensePlate())+"]\n";
         }
