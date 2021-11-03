@@ -41,7 +41,7 @@ public class CarPark {
         {
             if(spaces[i] == null) s+=i+"[: ]\n";
             else
-            s+= i+"[: ["+driveOff(spaces[i].getLicensePlate())+"]\n";
+            s+= i+"[: "+driveOff(spaces[i].getLicensePlate())+"]\n";
         }
       return s;
     }
