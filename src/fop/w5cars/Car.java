@@ -9,7 +9,8 @@ public class Car {
     {
         this.brand = x;
         this.licensePlate = y;
-        this.chassisNumber++;
+        this.count++;
+        this.chassisNumber = count;
     }
 
     public void setLicensePlate(LicensePlate licensePlate) {
