@@ -13,6 +13,11 @@ public class LicensePlate {
     {
         return (this.regionalCode.equals(other.regionalCode)  && this.letters.equals(other.letters)  && this.digits == other.digits);
     }
+    public String toString () {
+	return this.regionalCode+":"+this.letters+" "+this.digits;
+    }
+
+
 
 
 }

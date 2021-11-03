@@ -18,4 +18,20 @@ public class CarPark {
             if(spaces[i].getLicensePlate() == lp) return i;
             return -1;
     }
+    public Car driveOff (LicensePlate lp)
+    {
+        int pos = search(lp);
+        if(pos == -1) return null;
+        return spaces[pos];
+    }
+    public String toString() {
+	    String  s  ="Car Park:\n";
+	    for (int i=0;i<spaces.length;i++)
+        {
+            if(search(spaces[i].getLicensePlate()) == -1) s+=i+"[]\n";
+            else
+            s+= i+": ["+driveOff(spaces[i].getLicensePlate())+"]\n";
+        }
+      return s;
+    }
 }
