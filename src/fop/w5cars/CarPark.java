@@ -1,14 +1,15 @@
 package fop.w5cars;
 
 public class CarPark {
-	private int spaces;
-	public CarPark(int x)
+	private Car[] spaces;
+	public CarPark(int n)
     {
-        this.spaces = x;
+        this.spaces = new Car [n];
     }
     public int park (Car c)
     {
-        if (spaces > 0) return --spaces;
-        return -1;
+      for (int i=0;i<spaces.length;i++)
+          if(spaces [i] == null) {spaces[i] = c;return i+1;}
+      return -1;
     }
 }
